@@ -1,173 +1,254 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#080d18" />
-    <meta
-      name="description"
-      content="Portfólio de Ramon Lopes, estudante de Sistemas de Informação e desenvolvedor Full-Stack em formação."
-    />
-    <title>Ramon Lopes | Portfólio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Ramon Lopes — Página inicial">
-        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
-        <span>ramon<span class="brand-accent">.dev</span></span>
-      </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="main-navigation"
-        aria-label="Abrir menu de navegação"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080d18" />
+  <meta name="description"
+    content="Portfólio de Ramon Lopes, estudante de Sistemas de Informação e desenvolvedor Full-Stack em formação." />
+  <title>Ramon Lopes | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
 
-      <nav class="main-nav" id="main-navigation" aria-label="Navegação principal">
-        <a href="#inicio" aria-current="page">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
 
-      <a class="header-cta" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
-    </header>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ramon Lopes — Página inicial">
+      <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+      <span>ramon<span class="brand-accent">.dev</span></span>
+    </a>
 
-    <main id="conteudo-principal">
-      <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Construindo soluções, uma linha por vez</p>
-          <h1 id="hero-title">Olá, eu sou o <span class="text-gradient">Ramon Lopes.</span></h1>
-          <h2>Desenvolvedor Full-Stack <span class="muted-text">em formação.</span></h2>
-          <p class="hero-description">
-            Estudante de Sistemas de Informação e técnico em Desenvolvimento de Sistemas.
-            Gosto de transformar ideias em aplicações úteis e aprender construindo projetos reais.
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"
+      aria-label="Abrir menu de navegação">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="main-navigation" aria-label="Navegação principal">
+      <a href="#inicio" aria-current="location">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="header-cta" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Construindo soluções, uma linha por vez</p>
+        <h1 id="hero-title">Olá, eu sou o <span class="text-gradient">Ramon Lopes.</span></h1>
+        <h2>Desenvolvedor Full-Stack <span class="muted-text">em formação.</span></h2>
+        <p class="hero-description">
+          Estudante de Sistemas de Informação e técnico em Desenvolvimento de Sistemas.
+          Gosto de transformar ideias em aplicações úteis e aprender construindo projetos reais.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/ramon-lopes" target="_blank"
+            rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-symbol">⌘</span> Desenvolvimento de software</span>
+          <span><span class="meta-symbol">⌁</span> Aprendizado contínuo</span>
+        </div>
+      </div>
+
+      <figure class="hero-visual profile-card">
+        <div class="profile-glow" aria-hidden="true"></div>
+        <div class="profile-frame">
+          <div class="profile-frame-top">
+            <span class="profile-frame-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="profile-frame-label">PERFIL PROFISSIONAL</span>
+            <span class="profile-frame-indicator" aria-hidden="true"></span>
+          </div>
+          <div class="profile-image-wrap">
+            <img class="profile-photo" src="assets/images/ramon-perfil.jpeg"
+              data-fallback-src="assets/foto-perfil-placeholder.svg" alt="Foto de perfil de Ramon Lopes" />
+          </div>
+          <figcaption class="profile-caption">
+            <div>
+              <strong>Ramon Lopes</strong>
+              <span>Sistemas de Informação · FHO</span>
+            </div>
+            <span class="profile-caption-mark" aria-hidden="true">✳</span>
+          </figcaption>
+        </div>
+        <div class="floating-badge badge-top"><span aria-hidden="true">✳</span> Criatividade + lógica</div>
+      </figure>
+    </section>
+
+    <section class="about section-shell section-block" id="sobre" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 / SOBRE MIM</p>
+        <h2 id="about-title">Uma trajetória construída em <span class="text-gradient">tecnologia.</span></h2>
+      </div>
+
+      <div class="about-intro">
+        <p class="about-lead">
+          Minha formação combina uma base técnica em Desenvolvimento de Sistemas
+          com a graduação em Sistemas de Informação.
+        </p>
+        <p class="about-support">
+          Sigo aprofundando meus conhecimentos e aplicando o que aprendo em projetos
+          práticos, buscando unir organização, lógica e atenção à experiência de quem usa.
+        </p>
+      </div>
+
+      <div class="education-grid" aria-label="Formação acadêmica">
+        <article class="education-card education-card-technical">
+          <div class="education-card-top">
+            <span class="education-sequence">01 <span>/ FORMAÇÃO TÉCNICA</span></span>
+            <span class="education-status">Concluída</span>
+          </div>
+          <div class="education-card-main">
+            <span class="education-icon" aria-hidden="true">&lt;/&gt;</span>
+            <div>
+              <p class="education-level">Curso técnico</p>
+              <h3>Desenvolvimento de Sistemas</h3>
+              <p class="education-institution">COTIL · UNICAMP</p>
+            </div>
+          </div>
+          <p class="education-description">A base técnica que marcou meu início na área de tecnologia e desenvolvimento.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="https://github.com/ramon-lopes" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero-meta">
-            <span><span class="meta-symbol">⌘</span> Desenvolvimento de software</span>
-            <span><span class="meta-symbol">⌁</span> Aprendizado contínuo</span>
-          </div>
-        </div>
+          <span class="education-card-number" aria-hidden="true">01</span>
+        </article>
 
-        <div class="hero-visual" aria-label="Ilustração abstrata de código">
-          <div class="visual-glow"></div>
-          <div class="code-window">
-            <div class="window-top">
-              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-              <span>ramon.js</span>
-              <span class="window-lock" aria-hidden="true">◇</span>
+        <article class="education-card education-card-degree">
+          <div class="education-card-top">
+            <span class="education-sequence">02 <span>/ GRADUAÇÃO</span></span>
+            <span class="education-status education-status-current"><span></span> Em andamento</span>
+          </div>
+          <div class="education-card-main">
+            <span class="education-icon" aria-hidden="true">◎</span>
+            <div>
+              <p class="education-level">Bacharelado</p>
+              <h3>Sistemas de Informação</h3>
+              <p class="education-institution">FHO · Fundação Hermínio Ometto</p>
             </div>
-            <div class="code-content" aria-hidden="true">
-              <p><span class="code-line-number">01</span> <span class="code-purple">const</span> developer = {</p>
-              <p><span class="code-line-number">02</span> &nbsp; name: <span class="code-green">'Ramon Lopes'</span>,</p>
-              <p><span class="code-line-number">03</span> &nbsp; focus: <span class="code-green">'Full-Stack'</span>,</p>
-              <p><span class="code-line-number">04</span> &nbsp; learning: <span class="code-orange">true</span>,</p>
-              <p><span class="code-line-number">05</span> &nbsp; building: <span class="code-green">'new ideas'</span></p>
-              <p><span class="code-line-number">06</span> };</p>
-              <p class="code-comment"><span class="code-line-number">07</span> // always improving</p>
-            </div>
-            <div class="window-footer"><span class="footer-status-dot"></span> Pronto para construir <span>UTF-8</span></div>
           </div>
-          <div class="floating-badge badge-top"><span aria-hidden="true">✳</span> Criatividade + lógica</div>
-          <div class="floating-badge badge-bottom"><span aria-hidden="true">↗</span> Evoluindo sempre</div>
-        </div>
-      </section>
+          <p class="education-description">Ampliando minha visão sobre sistemas, tecnologia e resolução de problemas.
+          </p>
+          <span class="education-card-number" aria-hidden="true">02</span>
+        </article>
+      </div>
+    </section>
 
-      <section class="about section-shell section-block" id="sobre" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">01 / SOBRE MIM</p>
-          <h2 id="about-title">Tecnologia com <span class="text-gradient">propósito.</span></h2>
+    <section class="projects section-shell section-block" id="projetos" aria-labelledby="projects-title">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow">02 / TRABALHOS</p>
+          <h2 id="projects-title">Projetos em <span class="text-gradient">destaque.</span></h2>
         </div>
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>
-              Minha trajetória em tecnologia começou com a formação técnica em
-              Desenvolvimento de Sistemas e continua no Bacharelado em Sistemas de Informação.
-            </p>
-            <p>
-              Estou fortalecendo minha base em programação por meio de projetos práticos,
-              com atenção à organização do código, à experiência de quem usa e à qualidade das soluções.
-            </p>
-          </div>
-          <div class="info-card">
-            <span class="info-card-icon" aria-hidden="true">⌘</span>
-            <div><h3>Formação técnica</h3><p>Desenvolvimento de Sistemas · COTIL/UNICAMP</p></div>
-          </div>
-          <div class="info-card">
-            <span class="info-card-icon" aria-hidden="true">◎</span>
-            <div><h3>Graduação</h3><p>Sistemas de Informação · FHO</p></div>
-          </div>
-        </div>
-      </section>
+        <span class="section-note">Projeto principal · Desenvolvimento full-stack</span>
+      </div>
 
-      <section class="projects section-shell section-block" id="projetos" aria-labelledby="projects-title">
-        <div class="section-heading section-heading-row">
-          <div><p class="eyebrow">02 / TRABALHOS</p><h2 id="projects-title">Projetos em <span class="text-gradient">destaque.</span></h2></div>
-          <span class="section-note">Projetos e aprendizados em construção</span>
-        </div>
-        <article class="project-card">
-          <div class="project-preview" aria-hidden="true">
-            <div class="inventory-ui">
-              <div class="inventory-top"><span></span><span></span><span></span></div>
-              <div class="inventory-body">
-                <div class="inventory-sidebar"><i></i><i></i><i></i><i></i></div>
-                <div class="inventory-main"><div class="inventory-title"></div><div class="inventory-stats"><i></i><i></i><i></i></div><div class="inventory-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+      <article class="project-card">
+        <div class="project-preview" aria-hidden="true">
+          <div class="inventory-ui">
+            <div class="inventory-top"><span></span><span></span><span></span></div>
+            <div class="inventory-body">
+              <div class="inventory-sidebar"><i></i><i></i><i></i><i></i></div>
+              <div class="inventory-main">
+                <div class="inventory-title"></div>
+                <div class="inventory-stats"><i></i><i></i><i></i></div>
+                <div class="inventory-chart">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
               </div>
             </div>
-            <span class="preview-label">INVENTORY / DASHBOARD</span>
           </div>
-          <div class="project-info">
-            <div class="project-topline"><span class="project-type">FULL-STACK · APLICATIVO</span><span class="project-number">01</span></div>
-            <h3>Sistema de Estoque em Tempo Real</h3>
-            <p>
-              Sistema de gerenciamento de estoque com backend em Java e Spring Boot,
-              persistência com MySQL e aplicativo Flutter integrado por API.
-            </p>
-            <ul class="tech-list" aria-label="Tecnologias utilizadas">
-              <li>Java</li><li>Spring Boot</li><li>MySQL</li><li>Flutter</li><li>REST API</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/ramon-lopes/estoque-api-backend" target="_blank" rel="noopener noreferrer">Backend <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/ramon-lopes/app-mgr-software" target="_blank" rel="noopener noreferrer">Aplicativo <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
-        <p class="projects-footnote">Este portfólio também é um projeto em desenvolvimento. Novos trabalhos serão adicionados conforme forem concluídos.</p>
-      </section>
+          <span class="preview-label">SGETR / INVENTORY SYSTEM</span>
+        </div>
 
-      <section class="contact section-shell section-block" id="contato" aria-labelledby="contact-title">
-        <div class="contact-card">
-          <p class="eyebrow">03 / CONTATO</p>
-          <h2 id="contact-title">Vamos construir algo <span class="text-gradient">interessante?</span></h2>
-          <p>Estou aberto a oportunidades de estágio, colaboração e aprendizado na área de tecnologia.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://www.linkedin.com/in/ramon-almeida-lopes/" target="_blank" rel="noopener noreferrer">Conectar no LinkedIn <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="https://github.com/ramon-lopes" target="_blank" rel="noopener noreferrer">Ver GitHub <span aria-hidden="true">↗</span></a>
+        <div class="project-info">
+          <div class="project-topline">
+            <span class="project-type">PROJETO 01 · FULL-STACK</span>
+            <span class="project-number">SGETR</span>
+          </div>
+          <h3>Sistema de Estoque em Tempo Real</h3>
+          <p class="project-description">
+            Aplicação para gerenciamento de estoque que conecta um backend em Java e
+            Spring Boot a um aplicativo Flutter por meio de uma API REST, com persistência
+            de dados em MySQL.
+          </p>
+          <div class="tech-block">
+            <span class="tech-block-label">TECNOLOGIAS</span>
+            <ul class="tech-list" aria-label="Tecnologias utilizadas">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+              <li>Flutter</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/ramon-lopes/estoque-api-backend" target="_blank"
+              rel="noopener noreferrer">
+              Repositório do backend <span aria-hidden="true">↗</span>
+            </a>
+            <a class="project-link" href="https://github.com/ramon-lopes/app-mgr-software" target="_blank"
+              rel="noopener noreferrer">
+              Repositório do aplicativo <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
+      </article>
+    </section>
 
-    <footer class="site-footer section-shell">
-      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>ramon<span class="brand-accent">.dev</span></span></a>
-      <p>© <span id="ano"></span> Ramon Lopes. Feito com intenção, curiosidade e código.</p>
-      <a class="back-to-top" href="#inicio">Voltar ao topo ↑</a>
-    </footer>
-  </body>
+    <section class="contact section-shell section-block" id="contato" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow">03 / CONTATO</p>
+          <h2 id="contact-title">Vamos conversar sobre <span class="text-gradient">tecnologia?</span></h2>
+          <p>
+            Busco uma oportunidade de estágio em TI para contribuir, aprender com o time
+            e evoluir no desenvolvimento de soluções.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.linkedin.com/in/ramon-almeida-lopes/" target="_blank"
+              rel="noopener noreferrer">Falar pelo LinkedIn <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://github.com/ramon-lopes" target="_blank"
+              rel="noopener noreferrer">Ver GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <aside class="contact-aside" aria-label="Interesses profissionais">
+          <div class="contact-aside-top">
+            <span class="contact-online-dot" aria-hidden="true"></span>
+            <span>ABERTO A OPORTUNIDADES</span>
+          </div>
+          <div class="contact-aside-content">
+            <p class="contact-aside-label">OBJETIVO ATUAL</p>
+            <h3>Estágio em tecnologia</h3>
+            <p>Desenvolvimento de software, sistemas e soluções digitais.</p>
+          </div>
+          <div class="contact-aside-footer">
+            <span>Ramon Lopes</span>
+            <span>ramon.dev</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+      <span>ramon<span class="brand-accent">.dev</span></span>
+    </a>
+    <p>© <span id="ano"></span> Ramon Lopes. Feito com intenção, curiosidade e código.</p>
+    <a class="back-to-top" href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+</body>
+
 </html>
