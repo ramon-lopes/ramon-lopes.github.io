@@ -74,7 +74,8 @@
           </div>
           <div class="profile-image-wrap">
             <img class="profile-photo" src="assets/images/ramon-perfil.jpeg"
-              data-fallback-src="assets/foto-perfil-placeholder.svg" alt="Foto de perfil de Ramon Lopes" />
+              data-fallback-src="assets/foto-perfil-placeholder.svg" alt="Foto de perfil de Ramon Lopes"
+              width="800" height="940" fetchpriority="high" />
           </div>
           <figcaption class="profile-caption">
             <div>
@@ -150,55 +151,106 @@
           <p class="eyebrow">02 / TRABALHOS</p>
           <h2 id="projects-title">Projetos em <span class="text-gradient">destaque.</span></h2>
         </div>
-        <span class="section-note">Projeto principal · Desenvolvimento full-stack</span>
+        <span class="section-note">Projeto integrado · Aplicativo mobile + API REST</span>
       </div>
 
-      <article class="project-card">
+      <article class="project-card" aria-labelledby="sgetr-title">
         <div class="project-preview" aria-hidden="true">
-          <div class="inventory-ui">
-            <div class="inventory-top"><span></span><span></span><span></span></div>
-            <div class="inventory-body">
-              <div class="inventory-sidebar"><i></i><i></i><i></i><i></i></div>
-              <div class="inventory-main">
-                <div class="inventory-title"></div>
-                <div class="inventory-stats"><i></i><i></i><i></i></div>
-                <div class="inventory-chart">
-                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="project-preview-content">
+            <div class="inventory-ui" aria-hidden="true">
+              <div class="inventory-top"><span></span><span></span><span></span></div>
+              <div class="inventory-body">
+                <div class="inventory-sidebar"><i></i><i></i><i></i><i></i></div>
+                <div class="inventory-main">
+                  <div class="inventory-title"></div>
+                  <div class="inventory-stats"><i></i><i></i><i></i></div>
+                  <div class="inventory-chart">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="project-flow">
+              <span>FLUTTER</span>
+              <span class="project-flow-arrow" aria-hidden="true">↔</span>
+              <span>API REST</span>
+              <span class="project-flow-arrow" aria-hidden="true">↔</span>
+              <span>MYSQL</span>
+            </div>
           </div>
-          <span class="preview-label">SGETR / INVENTORY SYSTEM</span>
+          <span class="preview-label">ILUSTRAÇÃO CONCEITUAL · SGETR</span>
         </div>
 
         <div class="project-info">
           <div class="project-topline">
-            <span class="project-type">PROJETO 01 · FULL-STACK</span>
-            <span class="project-number">SGETR</span>
+            <span class="project-type">PROJETO EM DESTAQUE · FULL-STACK</span>
+            <span class="project-number">01 / SGETR</span>
           </div>
-          <h3>Sistema de Estoque em Tempo Real</h3>
+          <h3 id="sgetr-title">Sistema de Gerenciamento de Estoque em Tempo Real</h3>
           <p class="project-description">
-            Aplicação para gerenciamento de estoque que conecta um backend em Java e
-            Spring Boot a um aplicativo Flutter por meio de uma API REST, com persistência
-            de dados em MySQL.
+            Projeto que conecta um aplicativo mobile desenvolvido em Flutter a uma API REST
+            construída com Java e Spring Boot. A API centraliza as operações de estoque e
+            utiliza MySQL para persistir os dados.
           </p>
-          <div class="tech-block">
-            <span class="tech-block-label">TECNOLOGIAS</span>
-            <ul class="tech-list" aria-label="Tecnologias utilizadas">
-              <li>Java</li>
-              <li>Spring Boot</li>
-              <li>MySQL</li>
-              <li>Flutter</li>
-              <li>REST API</li>
+
+          <div class="project-highlights" aria-labelledby="project-highlights-title">
+            <p class="project-subheading" id="project-highlights-title">O QUE O SISTEMA OFERECE</p>
+            <ul class="project-feature-list">
+              <li>
+                <span class="project-feature-index" aria-hidden="true">01</span>
+                <span class="project-feature-copy">
+                  <strong>API REST e segurança</strong>
+                  <span>Endpoints de login e registro, com Spring Security e uso de DTOs.</span>
+                </span>
+              </li>
+              <li>
+                <span class="project-feature-index" aria-hidden="true">02</span>
+                <span class="project-feature-copy">
+                  <strong>Gerenciamento de produtos</strong>
+                  <span>Operações de cadastro, consulta, atualização e remoção pela API.</span>
+                </span>
+              </li>
+              <li>
+                <span class="project-feature-index" aria-hidden="true">03</span>
+                <span class="project-feature-copy">
+                  <strong>Integração entre aplicativo e backend</strong>
+                  <span>Aplicativo Flutter que consome os serviços da API por requisições HTTP.</span>
+                </span>
+              </li>
             </ul>
           </div>
+
+          <div class="project-tech-stack" aria-label="Tecnologias utilizadas no projeto">
+            <div class="project-tech-group">
+              <span class="tech-block-label">BACKEND</span>
+              <ul class="tech-list">
+                <li>Java 17</li>
+                <li>Spring Boot</li>
+                <li>Spring Security</li>
+                <li>JPA / Hibernate</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="project-tech-group">
+              <span class="tech-block-label">APLICATIVO MOBILE</span>
+              <ul class="tech-list">
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>HTTP</li>
+                <li>MVC</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="project-links">
             <a class="project-link" href="https://github.com/ramon-lopes/estoque-api-backend" target="_blank"
-              rel="noopener noreferrer">
-              Repositório do backend <span aria-hidden="true">↗</span>
+              rel="noopener noreferrer" aria-label="Ver código do backend no GitHub">
+              Código do backend <span aria-hidden="true">↗</span>
             </a>
             <a class="project-link" href="https://github.com/ramon-lopes/app-mgr-software" target="_blank"
-              rel="noopener noreferrer">
-              Repositório do aplicativo <span aria-hidden="true">↗</span>
+              rel="noopener noreferrer" aria-label="Ver código do aplicativo mobile no GitHub">
+              Código do aplicativo <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
