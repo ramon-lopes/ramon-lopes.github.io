@@ -1,6 +1,6 @@
 # Portfólio — Ramon Lopes
 
-Código-fonte do meu portfólio pessoal, desenvolvido para apresentar minha formação acadêmica, trajetória profissional, projetos e conhecimentos em tecnologia.
+Código-fonte do meu portfólio pessoal, desenvolvido para apresentar minha formação acadêmica, trajetória profissional, habilidades e projetos em tecnologia.
 
 O site está publicado pelo GitHub Pages.
 
@@ -39,6 +39,8 @@ O site está publicado pelo GitHub Pages.
 ```text
 ramon-lopes.github.io/
 ├── assets/
+│   ├── foto-perfil-placeholder.svg
+│   └── images/ramon-perfil.jpeg
 ├── css/
 │   └── style.css
 ├── js/
@@ -82,3 +84,22 @@ Na versão Desktop, participei do desenvolvimento do módulo de clientes, inclui
 O site é publicado pelo GitHub Pages, utilizando a branch `main` e a pasta raiz do repositório.
 
 As alterações enviadas para a branch de publicação são disponibilizadas após o processo de implantação do GitHub Pages.
+
+## Evolução — etapa 1 (página inicial)
+
+- Seção **Habilidades** com tecnologias agrupadas por contexto de uso em projetos e estudos.
+- Navegação atualizada para destacar a seção correspondente durante a rolagem.
+- Tipografia e espaçamentos aprimorados, principalmente nos projetos e em telas pequenas.
+- Animação de entrada discreta para cards e blocos, respeitando `prefers-reduced-motion`.
+- Imagem de reserva criada para o caso de falha no carregamento da foto principal.
+
+> As páginas `pages/sobre.html` e `pages/projetos.html` continuam reservadas para uma futura etapa.
+
+
+## Evolução — etapa 2 (Projetos em Destaque 2.0)
+
+- Cards dos projetos reorganizados em duas áreas: contexto e funcionalidades/entregáveis.
+- Tecnologias e links reunidos por componente: backend/mobile no SGETR e Desktop/Web no SysFin.
+- Link para a contribuição individual no SysFin exibido junto à versão Desktop.
+- Ilustrações conceituais identificadas como tal, sem apresentá-las como capturas reais dos sistemas.
+- Ajustes para leitura em desktop e celular, com transições discretas e suporte à redução de movimento.
