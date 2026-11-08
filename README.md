@@ -1,71 +1,84 @@
 # Portfólio — Ramon Lopes
 
-Portfólio pessoal feito com **HTML semântico, CSS e JavaScript puro**. O projeto apresenta minha trajetória acadêmica, meu projeto de estoque e meus canais profissionais.
+Código-fonte do meu portfólio pessoal, desenvolvido para apresentar minha formação acadêmica, trajetória profissional, projetos e conhecimentos em tecnologia.
 
-## Como executar
+O site está publicado pelo GitHub Pages.
 
-1. Baixe ou clone este repositório.
-2. Abra a pasta no Visual Studio Code.
-3. Abra `index.html` no navegador. Para uma experiência mais próxima de um site publicado, use uma extensão de servidor local, como Live Server.
-4. As fontes Manrope e DM Mono são carregadas do Google Fonts. Sem internet, o navegador usa fontes alternativas do sistema.
+## Acesso
 
-## Foto de perfil
-
-Para adicionar a foto pessoal na seção **Início**:
-
-1. Coloque a imagem dentro da pasta `assets/`.
-2. Dê ao arquivo o nome `foto-perfil.jpg`.
-3. Mantenha esse nome e caminho ou atualize o atributo `src` da imagem `.profile-photo` em `index.html`.
-
-A imagem de reserva `assets/foto-perfil-placeholder.svg` aparece automaticamente enquanto a foto pessoal não estiver no projeto. Uma foto vertical, com rosto e ombros visíveis e boa iluminação, funciona melhor no enquadramento atual.
-
-## Funcionalidades
-
-- Layout responsivo para desktop, tablet e celular.
-- Retrato de perfil com imagem de reserva automática.
-- Menu móvel acessível, com fechamento por seleção, tecla `Escape` ou retorno ao layout desktop.
-- Destaque automático da seção atual na navegação.
-- Link para pular diretamente ao conteúdo principal.
-- Ano do rodapé atualizado automaticamente.
-- Estados de foco visíveis para navegação por teclado.
-- Respeito à preferência do sistema por movimento reduzido.
+- **Site:** https://ramon-lopes.github.io/
+- **Perfil GitHub:** https://github.com/ramon-lopes
+- **LinkedIn:** https://www.linkedin.com/in/ramon-almeida-lopes/
 
 ## Tecnologias
 
 - HTML5
-- CSS3 (Grid, Flexbox, variáveis CSS e media queries)
-- JavaScript (DOM, eventos e `requestAnimationFrame`)
+- CSS3
+- JavaScript puro
+- Google Fonts
 
-## Estrutura
+## Executar localmente
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/ramon-lopes/ramon-lopes.github.io.git
+   ```
+
+2. Entre na pasta do projeto:
+
+   ```bash
+   cd ramon-lopes.github.io
+   ```
+
+3. Abra a pasta no Visual Studio Code.
+4. Execute o arquivo `index.html` no navegador. Para utilizar um servidor local, você pode usar a extensão Live Server.
+
+## Estrutura principal
 
 ```text
-meu-portfolio/
-├── index.html
+ramon-lopes.github.io/
+├── assets/
 ├── css/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── assets/
-│   └── foto-perfil-placeholder.svg
 ├── pages/
-│   └── README.md
+│   ├── projetos.html
+│   └── sobre.html
+├── index.html
 └── README.md
 ```
 
-## Projeto em destaque: Sistema de Estoque em Tempo Real
+## Projetos apresentados
 
-O projeto é apresentado como uma solução com backend em Java/Spring Boot, banco de dados MySQL e aplicativo Flutter conectado por API REST.
+### SGETR — Sistema de Gerenciamento de Estoque em Tempo Real
 
-- [Repositório do backend](https://github.com/ramon-lopes/estoque-api-backend)
-- [Repositório do aplicativo](https://github.com/ramon-lopes/app-mgr-software)
+Sistema que integra um backend desenvolvido em Java e Spring Boot, banco de dados MySQL e aplicativo Flutter por meio de uma API REST.
+
+**Repositórios:**
+- [Backend — Java e Spring Boot](https://github.com/ramon-lopes/estoque-api-backend)
+- [Aplicativo — Flutter](https://github.com/ramon-lopes/app-mgr-software)
+
+### SysFin — Sistema de Controle Financeiro
+
+Projeto acadêmico desenvolvido em equipe, com versões Desktop e Web.
+
+**Tecnologias:**
+- Desktop: C#, .NET 8 e Windows Forms.
+- Web: PHP, FastRoute e Dompdf.
+
+**Participação individual:**
+
+Na versão Desktop, participei do desenvolvimento do módulo de clientes, incluindo operações CRUD, consultas e listagem de registros e relatório em PDF.
+
+**Repositórios e contribuição:**
+- [Código Desktop](https://github.com/ProfMatioli-TDS2/sysfin-tds2-desk)
+- [Código Web](https://github.com/ProfMatioli-TDS2/sysfin-tds2-daw)
+- [Pull Request relacionado à minha contribuição](https://github.com/ProfMatioli-TDS2/sysfin-tds2-desk/pull/18)
 
 ## Publicação
 
-O site está preparado para publicação pelo GitHub Pages a partir da branch principal e da pasta raiz do repositório.
+O site é publicado pelo GitHub Pages, utilizando a branch `main` e a pasta raiz do repositório.
 
-## Próximas melhorias
-
-- Adicionar a foto pessoal em `assets/foto-perfil.jpg`.
-- Incluir capturas de tela reais do sistema de estoque.
-- Adicionar outros projetos quando estiverem suficientemente completos para apresentação.
-- Verificar o site com ferramentas de acessibilidade e em diferentes tamanhos de tela.
+As alterações enviadas para a branch de publicação são disponibilizadas após o processo de implantação do GitHub Pages.
