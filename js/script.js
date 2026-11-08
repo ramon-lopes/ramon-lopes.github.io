@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupCurrentYear();
   setupProfilePhoto();
   setupNavigationState();
+  setupScrollReveal();
 });
 
 function setupMobileMenu() {
@@ -159,4 +160,31 @@ function setupNavigationState() {
 
   // Define o item correto também ao abrir a página já em uma âncora.
   updateActiveLink();
+}
+
+
+// Animação progressiva de entrada: sem suporte ou com movimento reduzido, exibe normalmente.
+function setupScrollReveal() {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
+
+  const targets = document.querySelectorAll(
+    ".section-heading, .about-intro, .education-card, .skill-card, .project-card, .contact-card",
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.08,
+    rootMargin: "0px 0px -24px 0px",
+  });
+
+  targets.forEach((target) => {
+    target.classList.add("reveal-ready");
+    observer.observe(target);
+  });
 }

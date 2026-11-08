@@ -36,6 +36,7 @@
     <nav class="main-nav" id="main-navigation" aria-label="Navegação principal">
       <a href="#inicio" aria-current="location">Início</a>
       <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
@@ -46,7 +47,7 @@
   <main id="conteudo-principal">
     <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Construindo soluções, uma linha por vez</p>
+        <p class="eyebrow"><span class="status-dot"></span> Sistemas de Informação · FHO</p>
         <h1 id="hero-title">Olá, eu sou o <span class="text-gradient">Ramon Lopes.</span></h1>
         <h2>Desenvolvedor Full-Stack <span class="muted-text">em formação.</span></h2>
         <p class="hero-description">
@@ -59,8 +60,8 @@
             rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
         <div class="hero-meta">
-          <span><span class="meta-symbol">⌘</span> Desenvolvimento de software</span>
-          <span><span class="meta-symbol">⌁</span> Aprendizado contínuo</span>
+          <span><span class="meta-symbol">⌘</span> Java · Spring Boot</span>
+          <span><span class="meta-symbol">⌁</span> Desenvolvimento de software</span>
         </div>
       </div>
 
@@ -145,57 +146,111 @@
       </div>
     </section>
 
+    <section class="skills section-shell section-block" id="habilidades" aria-labelledby="skills-title">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow">02 / HABILIDADES</p>
+          <h2 id="skills-title">Tecnologias que fazem parte da minha <span class="text-gradient">jornada.</span></h2>
+        </div>
+        <p class="section-note skills-note">Conhecimentos desenvolvidos em estudos e projetos, com diferentes níveis de familiaridade.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-number" aria-hidden="true">01 / BACKEND</span>
+          <h3>Backend e APIs</h3>
+          <p>Construção de serviços e integração com bancos de dados.</p>
+          <ul class="skill-tags" aria-label="Tecnologias de backend">
+            <li>Java</li><li>Spring Boot</li><li>API REST</li><li>Spring Security</li><li>MySQL</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number" aria-hidden="true">02 / INTERFACES</span>
+          <h3>Web e mobile</h3>
+          <p>Criação de interfaces e aplicativos para diferentes plataformas.</p>
+          <ul class="skill-tags" aria-label="Tecnologias web e mobile">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Flutter</li><li>Dart</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number" aria-hidden="true">03 / DESKTOP</span>
+          <h3>Aplicações desktop</h3>
+          <p>Experiência acadêmica com aplicações Windows e dados.</p>
+          <ul class="skill-tags" aria-label="Tecnologias desktop">
+            <li>C#</li><li>.NET 8</li><li>Windows Forms</li><li>SQL Server</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number" aria-hidden="true">04 / FLUXO DE TRABALHO</span>
+          <h3>Desenvolvimento colaborativo</h3>
+          <p>Organização de código, versionamento e colaboração em equipe.</p>
+          <ul class="skill-tags" aria-label="Práticas e ferramentas de desenvolvimento">
+            <li>Git</li><li>GitHub</li><li>Branches</li><li>Pull Requests</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section class="projects section-shell section-block" id="projetos" aria-labelledby="projects-title">
       <div class="section-heading section-heading-row">
         <div>
-          <p class="eyebrow">02 / TRABALHOS</p>
+          <p class="eyebrow">03 / TRABALHOS</p>
           <h2 id="projects-title">Projetos em <span class="text-gradient">destaque.</span></h2>
         </div>
         <span class="section-note">Projetos individuais e acadêmicos em equipe</span>
       </div>
 
+      <!-- SGETR: contexto, funcionalidades e código agrupado por componente. -->
       <article class="project-card" aria-labelledby="sgetr-title">
-        <div class="project-preview" aria-hidden="true">
-          <div class="project-preview-content">
-            <div class="inventory-ui" aria-hidden="true">
-              <div class="inventory-top"><span></span><span></span><span></span></div>
-              <div class="inventory-body">
-                <div class="inventory-sidebar"><i></i><i></i><i></i><i></i></div>
-                <div class="inventory-main">
-                  <div class="inventory-title"></div>
-                  <div class="inventory-stats"><i></i><i></i><i></i></div>
-                  <div class="inventory-chart">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        <div class="project-lead">
+          <div class="project-preview project-preview--sgetr" aria-hidden="true">
+            <div class="project-preview-content">
+              <div class="inventory-ui">
+                <div class="inventory-top"><span></span><span></span><span></span></div>
+                <div class="inventory-body">
+                  <div class="inventory-sidebar"><i></i><i></i><i></i><i></i></div>
+                  <div class="inventory-main">
+                    <div class="inventory-title"></div>
+                    <div class="inventory-stats"><i></i><i></i><i></i></div>
+                    <div class="inventory-chart">
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="project-flow">
+                <span>FLUTTER</span>
+                <span class="project-flow-arrow">↔</span>
+                <span>API REST</span>
+                <span class="project-flow-arrow">↔</span>
+                <span>MYSQL</span>
+              </div>
             </div>
-
-            <div class="project-flow">
-              <span>FLUTTER</span>
-              <span class="project-flow-arrow" aria-hidden="true">↔</span>
-              <span>API REST</span>
-              <span class="project-flow-arrow" aria-hidden="true">↔</span>
-              <span>MYSQL</span>
+            <span class="preview-label">ILUSTRAÇÃO CONCEITUAL · SGETR</span>
+          </div>
+          <div class="project-info">
+            <div class="project-topline">
+              <span class="project-type">PROJETO EM DESTAQUE · FULL-STACK</span>
+              <span class="project-number">01 / SGETR</span>
+            </div>
+            <h3 id="sgetr-title">Sistema de Gerenciamento de Estoque em Tempo Real</h3>
+            <p class="project-description">
+              Projeto que conecta um aplicativo mobile desenvolvido em Flutter a uma API REST
+              construída com Java e Spring Boot. A API centraliza as operações de estoque e
+              utiliza MySQL para persistir os dados.
+            </p>
+            <div class="project-lead-tags" aria-label="Componentes do SGETR">
+              <span>Backend Java</span><span>Aplicativo Flutter</span><span>Banco de dados MySQL</span>
             </div>
           </div>
-          <span class="preview-label">ILUSTRAÇÃO CONCEITUAL · SGETR</span>
         </div>
 
-        <div class="project-info">
-          <div class="project-topline">
-            <span class="project-type">PROJETO EM DESTAQUE · FULL-STACK</span>
-            <span class="project-number">01 / SGETR</span>
-          </div>
-          <h3 id="sgetr-title">Sistema de Gerenciamento de Estoque em Tempo Real</h3>
-          <p class="project-description">
-            Projeto que conecta um aplicativo mobile desenvolvido em Flutter a uma API REST
-            construída com Java e Spring Boot. A API centraliza as operações de estoque e
-            utiliza MySQL para persistir os dados.
-          </p>
-
-          <div class="project-highlights" aria-labelledby="project-highlights-title">
-            <p class="project-subheading" id="project-highlights-title">O QUE O SISTEMA OFERECE</p>
+        <div class="project-details">
+          <section class="project-highlights" aria-labelledby="sgetr-highlights-title">
+            <h4 class="project-subheading" id="sgetr-highlights-title">O QUE O SISTEMA OFERECE</h4>
             <ul class="project-feature-list">
               <li>
                 <span class="project-feature-index" aria-hidden="true">01</span>
@@ -219,135 +274,158 @@
                 </span>
               </li>
             </ul>
-          </div>
+          </section>
 
-          <div class="project-tech-stack" aria-label="Tecnologias utilizadas no projeto">
-            <div class="project-tech-group">
-              <span class="tech-block-label">BACKEND</span>
-              <ul class="tech-list">
-                <li>Java 17</li>
-                <li>Spring Boot</li>
-                <li>Spring Security</li>
-                <li>JPA / Hibernate</li>
-                <li>MySQL</li>
-              </ul>
+          <section class="project-deliverables" aria-labelledby="sgetr-components-title">
+            <h4 class="project-subheading" id="sgetr-components-title">TECNOLOGIAS E REPOSITÓRIOS</h4>
+            <div class="project-tech-stack">
+              <div class="project-tech-group">
+                <div class="project-component-header">
+                  <span class="project-component-number" aria-hidden="true">01 /</span>
+                  <h5>Backend</h5>
+                </div>
+                <p class="project-component-description">API REST e persistência dos dados de estoque.</p>
+                <ul class="tech-list" aria-label="Tecnologias do backend do SGETR">
+                  <li>Java 17</li><li>Spring Boot</li><li>Spring Security</li>
+                  <li>JPA / Hibernate</li><li>MySQL</li>
+                </ul>
+                <div class="project-component-links">
+                  <a class="project-link" href="https://github.com/ramon-lopes/estoque-api-backend"
+                    target="_blank" rel="noopener noreferrer" aria-label="Ver código do backend do SGETR no GitHub">
+                    Código do backend <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tech-group">
+                <div class="project-component-header">
+                  <span class="project-component-number" aria-hidden="true">02 /</span>
+                  <h5>Aplicativo mobile</h5>
+                </div>
+                <p class="project-component-description">Aplicativo Flutter integrado aos serviços da API.</p>
+                <ul class="tech-list" aria-label="Tecnologias do aplicativo do SGETR">
+                  <li>Flutter</li><li>Dart</li><li>HTTP</li><li>MVC</li>
+                </ul>
+                <div class="project-component-links">
+                  <a class="project-link" href="https://github.com/ramon-lopes/app-mgr-software"
+                    target="_blank" rel="noopener noreferrer" aria-label="Ver código do aplicativo do SGETR no GitHub">
+                    Código do aplicativo <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="project-tech-group">
-              <span class="tech-block-label">APLICATIVO MOBILE</span>
-              <ul class="tech-list">
-                <li>Flutter</li>
-                <li>Dart</li>
-                <li>HTTP</li>
-                <li>MVC</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-links-block">
-            <p class="project-links-label" id="sgetr-links-title">ACESSO AO CÓDIGO</p>
-            <div class="project-links" role="group" aria-labelledby="sgetr-links-title">
-              <a class="project-link" href="https://github.com/ramon-lopes/estoque-api-backend" target="_blank"
-                rel="noopener noreferrer" aria-label="Ver código do backend no GitHub">
-                Código do backend <span aria-hidden="true">↗</span>
-              </a>
-              <a class="project-link" href="https://github.com/ramon-lopes/app-mgr-software" target="_blank"
-                rel="noopener noreferrer" aria-label="Ver código do aplicativo mobile no GitHub">
-                Código do aplicativo <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
+          </section>
         </div>
       </article>
 
+      <!-- SysFin: o destaque da contribuição refere-se à versão Desktop. -->
       <article class="project-card" aria-labelledby="sysfin-title">
-        <div class="project-preview" aria-hidden="true">
-          <div class="project-preview-content">
-            <div class="project-flow">
-              <span>SYSFIN</span>
-              <span class="project-flow-arrow">↔</span>
-              <span>CONTROLE FINANCEIRO</span>
+        <div class="project-lead">
+          <div class="project-preview project-preview--sysfin" aria-hidden="true">
+            <div class="sysfin-preview">
+              <div class="sysfin-window">
+                <div class="sysfin-window-top">
+                  <span class="sysfin-window-dots"><i></i><i></i><i></i></span>
+                  <span>SYSFIN / DESKTOP</span>
+                </div>
+                <div class="sysfin-window-body">
+                  <div class="sysfin-window-sidebar"><i></i><i></i><i></i><i></i></div>
+                  <div class="sysfin-window-main">
+                    <span class="sysfin-window-heading">Clientes</span>
+                    <div class="sysfin-window-toolbar"><span>Pesquisar</span><span>+</span></div>
+                    <div class="sysfin-window-row"><span></span><span></span><span></span></div>
+                    <div class="sysfin-window-row"><span></span><span></span><span></span></div>
+                    <div class="sysfin-window-row"><span></span><span></span><span></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sysfin-versions">
+                <span>DESKTOP <strong>C# / .NET 8</strong></span>
+                <span>WEB <strong>PHP</strong></span>
+              </div>
             </div>
-            <div class="project-flow">
-              <span>DESKTOP · C# / .NET 8</span>
+            <span class="preview-label">ILUSTRAÇÃO CONCEITUAL · SYSFIN</span>
+          </div>
+          <div class="project-info">
+            <div class="project-topline">
+              <span class="project-type">PROJETO ACADÊMICO · EM EQUIPE</span>
+              <span class="project-number">02 / SYSFIN</span>
             </div>
-            <div class="project-flow">
-              <span>WEB · PHP</span>
+            <h3 id="sysfin-title">SysFin — Sistema de Controle Financeiro</h3>
+            <p class="project-description">
+              Sistema desenvolvido em equipe como projeto final das disciplinas de Desenvolvimento
+              de Aplicações Web II e Desenvolvimento de Aplicações Desktop. O trabalho conta com
+              duas versões da aplicação: Desktop e Web.
+            </p>
+            <div class="project-lead-tags" aria-label="Versões do SysFin">
+              <span>Versão Desktop</span><span>Versão Web</span><span>Projeto em equipe</span>
             </div>
           </div>
-          <span class="preview-label">PROJETO ACADÊMICO EM EQUIPE · SYSFIN</span>
         </div>
 
-        <div class="project-info">
-          <div class="project-topline">
-            <span class="project-type">PROJETO ACADÊMICO · EM EQUIPE</span>
-            <span class="project-number">02 / SYSFIN</span>
-          </div>
-          <h3 id="sysfin-title">SysFin — Sistema de Controle Financeiro</h3>
-          <p class="project-description">
-            Sistema desenvolvido em equipe como projeto final das disciplinas de Desenvolvimento
-            de Aplicações Web II e Desenvolvimento de Aplicações Desktop. O trabalho conta com
-            duas versões da aplicação: Desktop e Web.
-          </p>
-
-          <div class="project-highlights" aria-labelledby="sysfin-highlights-title">
-            <p class="project-subheading" id="sysfin-highlights-title">MINHA PARTICIPAÇÃO</p>
+        <div class="project-details">
+          <section class="project-highlights" aria-labelledby="sysfin-highlights-title">
+            <h4 class="project-subheading" id="sysfin-highlights-title">MINHA PARTICIPAÇÃO</h4>
             <ul class="project-feature-list">
               <li>
                 <span class="project-feature-index" aria-hidden="true">01</span>
                 <span class="project-feature-copy">
-                  <strong>Versão Desktop</strong>
-                  <span>Participação no desenvolvimento do módulo de clientes, incluindo operações de cadastro, consulta, atualização e exclusão, além de funcionalidades relacionadas a relatórios em PDF.</span>
+                  <strong>Módulo de clientes · Desktop</strong>
+                  <span>Participação nas operações de cadastro, consulta, atualização e exclusão, além de funcionalidades relacionadas a relatórios em PDF.</span>
                 </span>
               </li>
               <li>
                 <span class="project-feature-index" aria-hidden="true">02</span>
                 <span class="project-feature-copy">
                   <strong>Trabalho colaborativo</strong>
-                  <span>Desenvolvimento em equipe com organização das tarefas, branches e pull requests.</span>
+                  <span>Desenvolvimento em equipe com organização de tarefas, branches e pull requests.</span>
                 </span>
               </li>
             </ul>
-          </div>
+            <p class="project-contribution-note">Minha contribuição apresentada aqui está relacionada à versão Desktop.</p>
+          </section>
 
-          <div class="project-tech-stack" aria-label="Tecnologias utilizadas nas versões do SysFin">
-            <div class="project-tech-group">
-              <span class="tech-block-label">VERSÃO DESKTOP</span>
-              <ul class="tech-list">
-                <li>C#</li>
-                <li>.NET 8</li>
-                <li>Windows Forms</li>
-                <li>SQL Server</li>
-                <li>iTextSharp</li>
-              </ul>
+          <section class="project-deliverables" aria-labelledby="sysfin-components-title">
+            <h4 class="project-subheading" id="sysfin-components-title">VERSÕES E REPOSITÓRIOS</h4>
+            <div class="project-tech-stack">
+              <div class="project-tech-group">
+                <div class="project-component-header">
+                  <span class="project-component-number" aria-hidden="true">01 /</span>
+                  <h5>Desktop</h5>
+                </div>
+                <p class="project-component-description">Aplicação Windows e módulo de clientes.</p>
+                <ul class="tech-list" aria-label="Tecnologias da versão Desktop do SysFin">
+                  <li>C#</li><li>.NET 8</li><li>Windows Forms</li>
+                  <li>SQL Server</li><li>iTextSharp</li>
+                </ul>
+                <div class="project-component-links">
+                  <a class="project-link" href="https://github.com/ProfMatioli-TDS2/sysfin-tds2-desk"
+                    target="_blank" rel="noopener noreferrer" aria-label="Ver código Desktop do SysFin no GitHub">
+                    Código Desktop <span aria-hidden="true">↗</span>
+                  </a>
+                  <a class="project-link project-link--subtle" href="https://github.com/ProfMatioli-TDS2/sysfin-tds2-desk/pull/18"
+                    target="_blank" rel="noopener noreferrer" aria-label="Ver minha contribuição na versão Desktop do SysFin">
+                    Minha contribuição <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tech-group">
+                <div class="project-component-header">
+                  <span class="project-component-number" aria-hidden="true">02 /</span>
+                  <h5>Web</h5>
+                </div>
+                <p class="project-component-description">Versão web desenvolvida pelo grupo.</p>
+                <ul class="tech-list" aria-label="Tecnologias da versão Web do SysFin">
+                  <li>PHP</li><li>Composer</li><li>FastRoute</li><li>Dompdf</li>
+                </ul>
+                <div class="project-component-links">
+                  <a class="project-link" href="https://github.com/ProfMatioli-TDS2/sysfin-tds2-daw"
+                    target="_blank" rel="noopener noreferrer" aria-label="Ver código Web do SysFin no GitHub">
+                    Código Web <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="project-tech-group">
-              <span class="tech-block-label">VERSÃO WEB</span>
-              <ul class="tech-list">
-                <li>PHP</li>
-                <li>Composer</li>
-                <li>FastRoute</li>
-                <li>Dompdf</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-links-block">
-            <p class="project-links-label" id="sysfin-links-title">REPOSITÓRIOS E CONTRIBUIÇÕES</p>
-            <div class="project-links" role="group" aria-labelledby="sysfin-links-title">
-              <a class="project-link" href="https://github.com/ProfMatioli-TDS2/sysfin-tds2-desk" target="_blank"
-                rel="noopener noreferrer" aria-label="Ver repositório da versão Desktop do SysFin">
-                Código Desktop <span aria-hidden="true">↗</span>
-              </a>
-              <a class="project-link" href="https://github.com/ProfMatioli-TDS2/sysfin-tds2-daw" target="_blank"
-                rel="noopener noreferrer" aria-label="Ver repositório da versão Web do SysFin">
-                Código Web <span aria-hidden="true">↗</span>
-              </a>
-              <a class="project-link" href="https://github.com/ProfMatioli-TDS2/sysfin-tds2-desk/pull/18" target="_blank"
-                rel="noopener noreferrer" aria-label="Ver pull request da participação no SysFin Desktop">
-                Minha contribuição no Desktop <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
+          </section>
         </div>
       </article>
     </section>
@@ -355,7 +433,7 @@
     <section class="contact section-shell section-block" id="contato" aria-labelledby="contact-title">
       <div class="contact-card">
         <div class="contact-copy">
-          <p class="eyebrow">03 / CONTATO</p>
+          <p class="eyebrow">04 / CONTATO</p>
           <h2 id="contact-title">Vamos conversar sobre <span class="text-gradient">tecnologia?</span></h2>
           <p>
             Busco uma oportunidade de estágio em TI para contribuir, aprender com o time
