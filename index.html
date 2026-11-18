@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#080d18" />
   <meta name="description"
-    content="Portfólio de Ramon Lopes, estudante de Sistemas de Informação e desenvolvedor Full-Stack em formação." />
+    content="Portfólio de Ramon Lopes, estudante de Sistemas de Informação e desenvolvedor backend em formação, com foco em Java e Spring Boot." />
   <title>Ramon Lopes | Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,12 +44,12 @@
     <a class="header-cta" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main id="conteudo-principal">
+  <main id="conteudo-principal" tabindex="-1">
     <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> Sistemas de Informação · FHO</p>
         <h1 id="hero-title">Olá, eu sou o <span class="text-gradient">Ramon Lopes.</span></h1>
-        <h2>Desenvolvedor Full-Stack <span class="muted-text">em formação.</span></h2>
+        <p class="hero-role">Desenvolvedor backend <span class="muted-text">em formação.</span></p>
         <p class="hero-description">
           Estudante de Sistemas de Informação e técnico em Desenvolvimento de Sistemas.
           Gosto de transformar ideias em aplicações úteis e aprender construindo projetos reais.
@@ -65,9 +65,9 @@
         </div>
       </div>
 
-      <figure class="hero-visual profile-card">
+      <div class="hero-visual">
         <div class="profile-glow" aria-hidden="true"></div>
-        <div class="profile-frame">
+        <figure class="profile-frame">
           <div class="profile-frame-top">
             <span class="profile-frame-mark" aria-hidden="true">&lt;/&gt;</span>
             <span class="profile-frame-label">PERFIL PROFISSIONAL</span>
@@ -76,7 +76,7 @@
           <div class="profile-image-wrap">
             <img class="profile-photo" src="assets/images/ramon-perfil.jpeg"
               data-fallback-src="assets/foto-perfil-placeholder.svg" alt="Foto de perfil de Ramon Lopes"
-              width="800" height="940" fetchpriority="high" />
+              width="960" height="1280" fetchpriority="high" />
           </div>
           <figcaption class="profile-caption">
             <div>
@@ -85,9 +85,9 @@
             </div>
             <span class="profile-caption-mark" aria-hidden="true">✳</span>
           </figcaption>
-        </div>
+        </figure>
         <div class="floating-badge badge-top"><span aria-hidden="true">✳</span> Criatividade + lógica</div>
-      </figure>
+      </div>
     </section>
 
     <section class="about section-shell section-block" id="sobre" aria-labelledby="about-title">
@@ -107,7 +107,7 @@
         </p>
       </div>
 
-      <div class="education-grid" aria-label="Formação acadêmica">
+      <div class="education-grid" role="group" aria-label="Formação acadêmica">
         <article class="education-card education-card-technical">
           <div class="education-card-top">
             <span class="education-sequence">01 <span>/ FORMAÇÃO TÉCNICA</span></span>
@@ -150,47 +150,58 @@
       <div class="section-heading section-heading-row">
         <div>
           <p class="eyebrow">02 / HABILIDADES</p>
-          <h2 id="skills-title">Tecnologias que fazem parte da minha <span class="text-gradient">jornada.</span></h2>
+          <h2 id="skills-title">O que estudo e aplico em <span class="text-gradient">projetos.</span></h2>
         </div>
-        <p class="section-note skills-note">Conhecimentos desenvolvidos em estudos e projetos, com diferentes níveis de familiaridade.</p>
+        <p class="section-note skills-note">Conhecimentos adquiridos em estudos e projetos, com diferentes níveis de familiaridade.</p>
       </div>
 
       <div class="skills-grid">
         <article class="skill-card">
-          <span class="skill-number" aria-hidden="true">01 / BACKEND</span>
-          <h3>Backend e APIs</h3>
-          <p>Construção de serviços e integração com bancos de dados.</p>
-          <ul class="skill-tags" aria-label="Tecnologias de backend">
-            <li>Java</li><li>Spring Boot</li><li>API REST</li><li>Spring Security</li><li>MySQL</li>
+          <h3>Backend e bancos de dados</h3>
+          <p>Meu foco atual. No SGETR, desenvolvi uma API para operações de estoque e persistência de dados.</p>
+          <ul class="skill-tags" role="list">
+            <li data-tech-mark="Jv">Java</li>
+            <li data-tech-mark="SB">Spring Boot</li>
+            <li data-tech-mark="SQL">MySQL</li>
+            <li data-tech-mark="API">APIs REST</li>
           </ul>
         </article>
 
         <article class="skill-card">
-          <span class="skill-number" aria-hidden="true">02 / INTERFACES</span>
-          <h3>Web e mobile</h3>
-          <p>Criação de interfaces e aplicativos para diferentes plataformas.</p>
-          <ul class="skill-tags" aria-label="Tecnologias web e mobile">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Flutter</li><li>Dart</li>
+          <h3>Desenvolvimento web</h3>
+          <p>Estrutura, estilo e interações das páginas deste portfólio.</p>
+          <ul class="skill-tags" role="list">
+            <li data-tech-mark="&lt;/&gt;">HTML</li>
+            <li data-tech-mark="{ }">CSS</li>
+            <li data-tech-mark="JS">JavaScript</li>
           </ul>
         </article>
 
         <article class="skill-card">
-          <span class="skill-number" aria-hidden="true">03 / DESKTOP</span>
-          <h3>Aplicações desktop</h3>
-          <p>Experiência acadêmica com aplicações Windows e dados.</p>
-          <ul class="skill-tags" aria-label="Tecnologias desktop">
-            <li>C#</li><li>.NET 8</li><li>Windows Forms</li><li>SQL Server</li>
+          <h3>Desenvolvimento mobile</h3>
+          <p>No SGETR, usei Flutter e Dart para criar o aplicativo integrado à API de estoque.</p>
+          <ul class="skill-tags" role="list">
+            <li data-tech-mark="Fl">Flutter</li>
           </ul>
         </article>
 
         <article class="skill-card">
-          <span class="skill-number" aria-hidden="true">04 / FLUXO DE TRABALHO</span>
-          <h3>Desenvolvimento colaborativo</h3>
-          <p>Organização de código, versionamento e colaboração em equipe.</p>
-          <ul class="skill-tags" aria-label="Práticas e ferramentas de desenvolvimento">
-            <li>Git</li><li>GitHub</li><li>Branches</li><li>Pull Requests</li>
+          <h3>Programação e sistemas embarcados</h3>
+          <p>Estudos de lógica de programação e fundamentos de eletrônica e sistemas embarcados.</p>
+          <ul class="skill-tags" role="list">
+            <li data-tech-mark="C">C</li>
+            <li data-tech-mark="C++">C++</li>
+            <li data-tech-mark="Ard">Arduino</li>
+            <li data-tech-mark="µC">Sistemas embarcados</li>
           </ul>
         </article>
+      </div>
+
+      <p class="skills-practice">Uso Git e GitHub para versionar código e colaborar com branches e pull requests.</p>
+
+      <div class="tech-marquee" hidden>
+        <div class="tech-marquee__viewport" aria-hidden="true"></div>
+        <button class="tech-marquee__pause" type="button" aria-pressed="false">Pausar animação das tecnologias</button>
       </div>
     </section>
 
