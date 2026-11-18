@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupProfilePhoto();
   setupNavigationState();
   setupScrollReveal();
+  setupTechnologyMarquee();
 });
 
 function setupMobileMenu() {
@@ -187,4 +188,44 @@ function setupScrollReveal() {
     target.classList.add("reveal-ready");
     observer.observe(target);
   });
+}
+
+// A seção de habilidades é a fonte dos nomes exibidos na faixa.
+function setupTechnologyMarquee() {
+  const marquee = document.querySelector(".tech-marquee");
+  if (!marquee) return;
+
+  const technologies = document.querySelectorAll("#habilidades [data-tech-mark]");
+  if (!technologies.length) return;
+
+  const group = document.createElement("ul");
+  group.className = "tech-marquee__group";
+
+  technologies.forEach((technology) => {
+    const chip = document.createElement("li");
+    chip.className = "tech-chip";
+
+    const mark = document.createElement("span");
+    mark.className = "tech-chip__mark";
+    mark.textContent = technology.dataset.techMark;
+    chip.append(mark, technology.textContent.trim());
+    group.append(chip);
+  });
+
+  // As sequências têm a mesma largura, inclusive o espaço entre elas.
+  const copy = group.cloneNode(true);
+  copy.classList.add("tech-marquee__copy");
+
+  const track = document.createElement("div");
+  track.className = "tech-marquee__track";
+  track.append(group, copy);
+  marquee.querySelector(".tech-marquee__viewport").append(track);
+
+  const pauseButton = marquee.querySelector(".tech-marquee__pause");
+  pauseButton.addEventListener("click", () => {
+    const paused = marquee.classList.toggle("is-paused");
+    pauseButton.setAttribute("aria-pressed", String(paused));
+  });
+
+  marquee.hidden = false;
 }
